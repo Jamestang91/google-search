@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .image {
+                position:absolute;
+                top: 0px; 
+                margin-top: 10px; 
+                right: 120px; 
+                margin-right: 4px;
+            }
+            .advanced_search {
+                position: absolute; 
+                top: 0px; 
+                margin-top: 10px; 
+                right: 0px; 
+                margin-right: 4px;
+            }
+            .position {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .size{
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            .max_height{
+                max-height: 100px;
+                position: relative;
+            }
+            .margin {
+                height: 100%;
+                margin-top: 80px;
+            }
+            .object{
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+            }
+            .high {
+                height: 100%;
+                margin-top: 50px;
+            }
+            .box_size{
+                margin: 0 auto;
+                width: 700px;
+                padding-top: 6px;
+                max-width: 2000px;
+                position: relative;
+            }
+            .center{
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                margin-top: 6px;
+                align-items: center;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image">
+            <a href = "image.html" target="_top">Images</a>
+        </div>
+        <div class="advanced_search">
+            <a href = "advanced.html" target="_top">Advanced_search</a>
+        </div>
+        <div class="position size">
+            <div class="max_height margin">
+                <img class="object" alt="search" height="92" width="272" src="images.png" data-atf="1" data-frt="0">
+            </div>
+        </div>
+        <div class="position high">
+            <form action="https://www.google.com/search" method="GET" role="search">
+                <input class="box_size" type="text" name="q">
+                <input class="center" type="submit" value="Google Search">
+            </form>
+        </div>
+
+    </body>
+</html>
